@@ -6,7 +6,7 @@ public class FuzzyFinder {
 
   public int linearSearch(ArrayList<Fuzzy> arr) {
     for(int i = 0; i < arr.size(); i++) {
-      if(arr.get(i).equals("gold")) {
+      if(arr.get(i).color.equals("gold")) {
         return i;
       }
     }
@@ -21,14 +21,15 @@ public class FuzzyFinder {
       int middlePosition = (high+low) / 2;
       Fuzzy middleFuzzy = arr.get(middlePosition);
 
-      if(middleFuzzy.equals("gold")) {
+      if(middleFuzzy.color.equals("gold")) {
         return middlePosition;
       }
-      if()
+      if(middleFuzzy.color.compareTo("gold") < 0) {
+        low = middlePosition + 1;
+      } else {
+        high = middlePosition - 1;
+      }
     }
     return -1;
-  }
-  public static void main(String args[]) {
-    System.out.println("In addition to your search functions, you can write a main function if you wish!");
   }
 }

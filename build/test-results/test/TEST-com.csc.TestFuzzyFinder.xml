@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.csc.TestFuzzyFinder" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-10-20T03:31:26" hostname="KYLESPC" time="0.022">
+  <properties/>
+  <testcase name="testLinearSearchRandom()" classname="com.csc.TestFuzzyFinder" time="0.014"/>
+  <testcase name="testLinearSearchSorted()" classname="com.csc.TestFuzzyFinder" time="0.002"/>
+  <testcase name="testBinarySearchRandom()" classname="com.csc.TestFuzzyFinder" time="0.002"/>
+  <testcase name="testBinarySearchSorted()" classname="com.csc.TestFuzzyFinder" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
